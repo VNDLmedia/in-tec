@@ -25,14 +25,14 @@ export default function GradientText({ children }: { children: ReactNode }) {
       className="relative inline-block bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
     >
       {children}
-      {visible && (
-        <span
-          aria-hidden
-          className="pointer-events-none absolute inset-0 animate-shine-text select-none bg-clip-text text-transparent"
-        >
-          {children}
-        </span>
-      )}
+      <span
+        aria-hidden
+        className={`pointer-events-none absolute inset-0 select-none bg-clip-text text-transparent ${
+          visible ? "animate-shine-text" : ""
+        }`}
+      >
+        {children}
+      </span>
     </span>
   );
 }
