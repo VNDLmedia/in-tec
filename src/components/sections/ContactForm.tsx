@@ -141,11 +141,13 @@ export default function ContactForm() {
                   Was dürfen wir für Sie tun?
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/[0.06] rounded-xl md:rounded-2xl overflow-hidden">
-                  {formServiceOptions.map((item) => (
+                  {formServiceOptions.map((item, idx) => (
                     <button
                       key={item.id}
                       onClick={() => handleServiceSelect(item.title)}
-                      className="group flex items-center gap-4 p-5 md:p-6 bg-[#0a0a0a] hover:bg-white/[0.04] transition-colors text-left"
+                      className={`group flex items-center gap-4 p-5 md:p-6 bg-[#0a0a0a] hover:bg-white/[0.04] transition-colors text-left ${
+                        idx === formServiceOptions.length - 1 ? "sm:col-span-2" : ""
+                      }`}
                     >
                       <item.icon className="w-5 h-5 text-zinc-600 group-hover:text-white transition-colors shrink-0" />
                       <span className="text-base md:text-lg text-zinc-300 group-hover:text-white transition-colors flex-1">
