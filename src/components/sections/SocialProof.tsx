@@ -9,7 +9,7 @@ export default function SocialProof() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Logo Marquee */}
         <div className="mb-16 md:mb-32">
-          <p className="text-center text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-12">
+          <p className="text-center text-xs md:text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-8 md:mb-12">
             Vertraut von führenden Unternehmen der Region
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-24 opacity-40 grayscale">
@@ -26,8 +26,8 @@ export default function SocialProof() {
 
         {/* Testimonial */}
         <div className="max-w-4xl mx-auto text-center">
-          <Quote className="w-10 h-10 md:w-16 md:h-16 text-zinc-800 mx-auto mb-8 transform rotate-180" />
-          <h3 className="text-2xl sm:text-3xl md:text-5xl font-light text-white leading-tight mb-10">
+          <Quote className="w-8 h-8 md:w-16 md:h-16 text-zinc-800 mx-auto mb-6 md:mb-8 transform rotate-180" />
+          <h3 className="text-xl sm:text-2xl md:text-5xl font-light text-white leading-tight mb-8 md:mb-10">
             &ldquo;Seit wir mit In-Tec arbeiten, müssen wir uns über die
             Sauberkeit unserer Immobilien <GradientText>keine Gedanken mehr machen</GradientText>. Es läuft
             absolut lautlos, professionell und immer in <GradientText>höchster

@@ -52,7 +52,7 @@ export default function ContactForm() {
         </div>
 
         {/* Direct contact options */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mb-20">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mb-12 md:mb-20">
           <a
             href="tel:+493012345678"
             className="flex items-center gap-2.5 px-5 py-2.5 border border-white/10 rounded-full text-zinc-400 hover:text-white hover:border-white/30 transition-all text-sm"
@@ -79,7 +79,7 @@ export default function ContactForm() {
         </div>
 
         {/* Divider */}
-        <div className="flex items-center gap-4 max-w-2xl mx-auto mb-16">
+        <div className="flex items-center gap-4 max-w-2xl mx-auto mb-10 md:mb-16">
           <div className="flex-1 h-px bg-white/10" />
           <span className="text-zinc-600 text-sm uppercase tracking-widest">oder Formular</span>
           <div className="flex-1 h-px bg-white/10" />
@@ -87,7 +87,7 @@ export default function ContactForm() {
 
         <div className="relative">
           {/* Progress Indicator */}
-          <div className="flex justify-center gap-3 mb-16">
+          <div className="flex justify-center gap-3 mb-10 md:mb-16">
             {[1, 2, 3].map((step) => (
               <div
                 key={step}
