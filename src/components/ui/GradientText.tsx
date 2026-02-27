@@ -27,20 +27,20 @@ export default function GradientText({ children }: { children: ReactNode }) {
       }`}
     >
       {children}
-      {/* Shine sweep */}
+      {/* Shine sweep – clipped to text shape */}
       {visible && (
         <span
           aria-hidden
-          className="pointer-events-none absolute inset-0 overflow-hidden"
+          className="pointer-events-none absolute inset-0 animate-shine-text select-none bg-clip-text text-transparent"
         >
-          <span className="absolute inset-y-0 w-[60%] animate-shine bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-[-20deg]" />
+          {children}
         </span>
       )}
       {/* Bling dot */}
       {visible && (
         <span
           aria-hidden
-          className="pointer-events-none absolute -top-1 -right-1 w-2 h-2 rounded-full bg-white animate-bling"
+          className="pointer-events-none absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-white animate-bling"
         />
       )}
     </span>
