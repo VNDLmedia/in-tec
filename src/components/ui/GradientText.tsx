@@ -40,7 +40,7 @@ export default function GradientText({ children }: { children: ReactNode }) {
       {visible && (
         <span
           aria-hidden
-          className="pointer-events-none absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-white animate-bling"
+          className="pointer-events-none absolute top-[0.1em] right-0 w-1.5 h-1.5 rounded-full bg-white animate-bling"
         />
       )}
     </span>
