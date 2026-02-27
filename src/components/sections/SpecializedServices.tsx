@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { specializedServices } from "@/data/content";
+import GradientText from "@/components/ui/GradientText";
 
 export default function SpecializedServices() {
   return (
     <section id="spezial" className="py-32 bg-black">
       <div className="max-w-5xl mx-auto px-6 lg:px-12">
         <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-16">
-          Spezialisiertes <br />
+          <GradientText>Spezialisiertes</GradientText> <br />
           Handwerk.
         </h2>
 

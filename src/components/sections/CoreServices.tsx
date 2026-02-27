@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { coreServices } from "@/data/content";
+import GradientText from "@/components/ui/GradientText";
 
 export default function CoreServices() {
   return (
@@ -9,7 +10,7 @@ export default function CoreServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-24 md:text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6">
-            Präzision in der Fläche.
+            <GradientText>Präzision</GradientText> in der Fläche.
           </h2>
           <p className="text-zinc-400 text-xl">
             Wir fokussieren uns auf die Kernbereiche der modernen

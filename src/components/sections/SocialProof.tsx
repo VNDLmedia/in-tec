@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Quote } from "lucide-react";
 import { clientLogos } from "@/data/content";
+import GradientText from "@/components/ui/GradientText";
 
 export default function SocialProof() {
   return (
@@ -28,9 +29,9 @@ export default function SocialProof() {
           <Quote className="w-16 h-16 text-zinc-800 mx-auto mb-8 transform rotate-180" />
           <h3 className="text-3xl md:text-5xl font-light text-white leading-tight mb-10">
             &ldquo;Seit wir mit In-Tec arbeiten, müssen wir uns über die
-            Sauberkeit unserer Immobilien keine Gedanken mehr machen. Es läuft
-            absolut lautlos, professionell und immer in höchster
-            Qualität.&rdquo;
+            Sauberkeit unserer Immobilien <GradientText>keine Gedanken mehr machen</GradientText>. Es läuft
+            absolut lautlos, professionell und immer in <GradientText>höchster
+            Qualität</GradientText>.&rdquo;
           </h3>
           <div className="flex items-center justify-center gap-4">
             <div className="relative w-12 h-12 rounded-full bg-zinc-800 overflow-hidden">

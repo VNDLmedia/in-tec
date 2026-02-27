@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { MoveHorizontal } from "lucide-react";
+import GradientText from "@/components/ui/GradientText";
 
 export default function BeforeAfterSlider() {
   const [sliderPos, setSliderPos] = useState(50);
@@ -15,7 +16,7 @@ export default function BeforeAfterSlider() {
             Der In-Tec Unterschied
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-            Qualität, die man spürt.
+            <GradientText>Qualität</GradientText>, die man spürt.
           </h2>
           <p className="text-zinc-400 text-xl mt-6 max-w-2xl mx-auto">
             Ziehen Sie den Slider, um den Unterschied zu erleben. Wir verwandeln
