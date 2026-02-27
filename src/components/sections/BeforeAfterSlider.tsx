@@ -15,7 +15,7 @@ export default function BeforeAfterSlider() {
           <span className="text-emerald-400 font-medium tracking-widest uppercase mb-4 block">
             Der In-Tec Unterschied
           </span>
-          <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white tracking-tight">
             <GradientText>Qualität</GradientText>, die man spürt.
           </h2>
           <p className="text-zinc-400 text-xl mt-6 max-w-2xl mx-auto">
@@ -24,7 +24,7 @@ export default function BeforeAfterSlider() {
           </p>
         </div>
 
-        <div className="relative w-full aspect-[4/3] md:aspect-[21/9] rounded-[2rem] overflow-hidden group bg-zinc-900 border border-white/10 select-none shadow-2xl">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] rounded-[2rem] overflow-hidden group bg-zinc-900 border border-white/10 select-none shadow-2xl">
           {/* BEFORE Image */}
           <div className="absolute inset-0 w-full h-full pointer-events-none">
             <Image

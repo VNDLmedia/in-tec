@@ -8,7 +8,7 @@ export default function NotFound() {
       {/* Giant 404 background */}
       <span
         aria-hidden
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] md:text-[28rem] lg:text-[36rem] font-black text-white/[0.03] tracking-tighter leading-none select-none pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[14rem] sm:text-[20rem] md:text-[28rem] lg:text-[36rem] font-black text-white/[0.06] tracking-tighter leading-none select-none pointer-events-none"
       >
         404
       </span>
@@ -17,7 +17,7 @@ export default function NotFound() {
         Seite nicht gefunden
       </p>
 
-      <h1 className="relative text-6xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter text-center leading-[0.9] mb-6">
+      <h1 className="relative text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter text-center leading-[0.9] mb-6">
         Hier ist es <br />
         <GradientText>blitzsauber.</GradientText>
       </h1>

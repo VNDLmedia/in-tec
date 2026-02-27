@@ -5,18 +5,18 @@ import GradientText from "@/components/ui/GradientText";
 
 export default function SocialProof() {
   return (
-    <section className="py-32 bg-[#050505] border-y border-white/5 overflow-hidden">
+    <section className="py-20 md:py-32 bg-[#050505] border-y border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Logo Marquee */}
-        <div className="mb-32">
+        <div className="mb-16 md:mb-32">
           <p className="text-center text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-12">
             Vertraut von führenden Unternehmen der Region
           </p>
-          <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-40 grayscale">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-24 opacity-40 grayscale">
             {clientLogos.map((logo, i) => (
               <span
                 key={i}
-                className="text-2xl md:text-3xl font-bold text-white font-serif tracking-tighter"
+                className="text-xl md:text-3xl font-bold text-white font-serif tracking-tighter"
               >
                 {logo}
               </span>
@@ -26,8 +26,8 @@ export default function SocialProof() {
 
         {/* Testimonial */}
         <div className="max-w-4xl mx-auto text-center">
-          <Quote className="w-16 h-16 text-zinc-800 mx-auto mb-8 transform rotate-180" />
-          <h3 className="text-3xl md:text-5xl font-light text-white leading-tight mb-10">
+          <Quote className="w-10 h-10 md:w-16 md:h-16 text-zinc-800 mx-auto mb-8 transform rotate-180" />
+          <h3 className="text-2xl sm:text-3xl md:text-5xl font-light text-white leading-tight mb-10">
             &ldquo;Seit wir mit In-Tec arbeiten, müssen wir uns über die
             Sauberkeit unserer Immobilien <GradientText>keine Gedanken mehr machen</GradientText>. Es läuft
             absolut lautlos, professionell und immer in <GradientText>höchster

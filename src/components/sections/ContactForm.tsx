@@ -37,13 +37,13 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="kontakt" className="py-32 bg-black relative">
+    <section id="kontakt" className="py-20 md:py-32 bg-black relative">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-10">
           <span className="text-emerald-400 font-medium tracking-widest uppercase text-sm mb-4 block">
             Kontakt
           </span>
-          <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">
             Lassen Sie uns <GradientText>starten</GradientText>.
           </h2>
           <p className="text-xl text-zinc-500 font-light">
@@ -52,7 +52,7 @@ export default function ContactForm() {
         </div>
 
         {/* Direct contact options */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mb-20">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mb-20">
           <a
             href="tel:+493012345678"
             className="flex items-center gap-2.5 px-5 py-2.5 border border-white/10 rounded-full text-zinc-400 hover:text-white hover:border-white/30 transition-all text-sm"
@@ -111,11 +111,11 @@ export default function ContactForm() {
                     <button
                       key={item.id}
                       onClick={() => handleServiceSelect(item.title)}
-                      className="flex items-center justify-between px-6 py-6 border-b border-white/10 hover:border-white/40 hover:pl-10 transition-all text-left group"
+                      className="flex items-center justify-between px-6 py-5 md:py-6 border-b border-white/10 hover:border-white/40 hover:pl-10 transition-all text-left group"
                     >
                       <div className="flex items-center gap-6 text-white">
                         <item.icon className="w-6 h-6 text-zinc-500 group-hover:text-white transition-colors" />
-                        <span className="text-xl md:text-2xl font-light">
+                        <span className="text-lg md:text-2xl font-light">
                           {item.title}
                         </span>
                       </div>
@@ -150,7 +150,7 @@ export default function ContactForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, sqm: e.target.value })
                       }
-                      className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-xl md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
+                      className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-lg md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
                     />
                   </div>
 
@@ -158,14 +158,14 @@ export default function ContactForm() {
                     <label className="block text-sm font-medium text-zinc-500 mb-4 uppercase tracking-wider">
                       Gewünschter Turnus
                     </label>
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+                    <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4">
                       {frequencyOptions.map((freq) => (
                         <button
                           key={freq}
                           onClick={() =>
                             setFormData({ ...formData, frequency: freq })
                           }
-                          className={`text-left text-lg md:text-xl py-3 border-b transition-colors ${
+                          className={`text-left text-base md:text-xl py-3 border-b transition-colors ${
                             formData.frequency === freq
                               ? "border-white text-white font-medium"
                               : "border-white/10 text-zinc-500 hover:text-zinc-300"
@@ -216,7 +216,7 @@ export default function ContactForm() {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-xl md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-lg md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
                   />
                   <input
                     type="email"
@@ -225,7 +225,7 @@ export default function ContactForm() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-xl md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-lg md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
                   />
                   <input
                     type="tel"
@@ -234,7 +234,7 @@ export default function ContactForm() {
                     onChange={(e) =>
                       setFormData({ ...formData, phone: e.target.value })
                     }
-                    className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-xl md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
+                    className="w-full bg-transparent border-b border-white/20 px-0 py-4 text-white text-lg md:text-2xl focus:outline-none focus:border-white transition-colors placeholder:text-zinc-700 rounded-none"
                   />
 
                   <div className="pt-12">

@@ -26,7 +26,7 @@ export default function LeistungenPage() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-24 max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">
               Unsere Leistungen
             </h1>
             <p className="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed">
@@ -46,7 +46,7 @@ export default function LeistungenPage() {
                 <Link
                   key={service.id}
                   href={`/leistungen/${service.slug}`}
-                  className="relative h-[50vh] min-h-[400px] w-full rounded-[2rem] overflow-hidden group block"
+                  className="relative h-[50vh] min-h-[300px] md:min-h-[400px] w-full rounded-[2rem] overflow-hidden group block"
                 >
                   <Image
                     src={service.image}
@@ -61,7 +61,7 @@ export default function LeistungenPage() {
                     <span className="text-emerald-400 font-medium tracking-widest uppercase mb-3 text-sm">
                       {service.subtitle}
                     </span>
-                    <h3 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-4">
+                    <h3 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white tracking-tighter mb-4">
                       {service.title}
                     </h3>
                     <p className="text-lg md:text-xl text-zinc-300 font-light max-w-2xl mb-6">
@@ -93,12 +93,12 @@ export default function LeistungenPage() {
                     <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-zinc-500 group-hover:text-white group-hover:border-white/30 transition-all">
                       <service.icon className="w-5 h-5" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-semibold text-white tracking-tight">
+                    <h3 className="text-lg md:text-2xl font-semibold text-white tracking-tight">
                       {service.title}
                     </h3>
                   </div>
                   <div className="flex items-center gap-6 md:w-1/2">
-                    <p className="text-zinc-400 text-lg font-light flex-1">
+                    <p className="text-zinc-400 text-base md:text-lg font-light flex-1">
                       {service.desc}
                     </p>
                     <ArrowRight className="w-5 h-5 text-zinc-600 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0" />

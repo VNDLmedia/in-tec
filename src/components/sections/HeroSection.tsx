@@ -18,10 +18,10 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
         <div className="max-w-4xl">
-          <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-bold text-white tracking-tighter leading-[0.9] mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[8rem] font-bold text-white tracking-tighter leading-[0.9] mb-8">
             Kompromisslos. <br /> <GradientText>Sauber.</GradientText>
           </h1>
-          <p className="text-xl md:text-3xl text-zinc-400 max-w-2xl font-light leading-relaxed mb-12">
+          <p className="text-lg sm:text-xl md:text-3xl text-zinc-400 max-w-2xl font-light leading-relaxed mb-12">
             Hochwertiges Facility Management für Immobilien, die <GradientText>mehr verlangen</GradientText>{" "}
             als nur den Standard.
           </p>

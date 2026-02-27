@@ -7,7 +7,7 @@ export default function StatsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col">
-              <span className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
+              <span className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-2">
                 {stat.value}
               </span>
               <span className="text-sm text-zinc-500 font-medium uppercase tracking-wider">

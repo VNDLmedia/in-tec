@@ -90,7 +90,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       />
 
       {/* Hero */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden">
+      <section className="relative h-[60vh] min-h-[350px] md:min-h-[500px] flex items-end overflow-hidden">
         <Image
           src={image}
           alt={title}
@@ -114,7 +114,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </span>
           )}
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter mb-6">
             {title}
           </h1>
 
@@ -155,7 +155,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
           {/* CTA */}
           <div className="mt-20 p-8 md:p-12 rounded-[2rem] border border-white/10 bg-white/5">
-            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
               Interesse geweckt?
             </h2>
             <p className="text-lg text-zinc-400 font-light mb-8 max-w-xl">
