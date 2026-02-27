@@ -22,11 +22,19 @@ export default function GradientText({ children }: { children: ReactNode }) {
   return (
     <span
       ref={ref}
-      className={`bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent transition-opacity duration-1000 ease-out ${
+      className={`relative inline-block bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent transition-opacity duration-1000 ease-out ${
         visible ? "opacity-100" : "opacity-0"
       }`}
     >
       {children}
+      <span
+        aria-hidden
+        className={`pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent bg-[length:200%_100%] bg-clip-text text-transparent ${
+          visible ? "animate-shimmer" : ""
+        }`}
+      >
+        {children}
+      </span>
     </span>
   );
 }

@@ -23,3 +23,17 @@ body {
 .animate-fade-slide-in {
   animation: fade-slide-in 0.4s ease-out;
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.2s ease-in-out 0.6s 1;
+  background-position: 200% 0;
+}
