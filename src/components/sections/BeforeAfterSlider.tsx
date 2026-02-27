@@ -33,9 +33,6 @@ export default function BeforeAfterSlider() {
               fill
               className="object-cover grayscale contrast-75 brightness-50 sepia-[.20] blur-[1px]"
             />
-            <div className="absolute top-6 left-6 md:top-10 md:left-10 bg-black/50 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/10 text-white text-sm font-semibold tracking-wider uppercase">
-              Vorher
-            </div>
           </div>
 
           {/* AFTER Image */}
@@ -49,9 +46,14 @@ export default function BeforeAfterSlider() {
               fill
               className="object-cover"
             />
-            <div className="absolute top-6 right-6 md:top-10 md:right-10 bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/20 text-white text-sm font-semibold tracking-wider uppercase shadow-lg">
-              Nachher
-            </div>
+          </div>
+
+          {/* Labels – always visible, above images */}
+          <div className="absolute top-6 left-6 md:top-10 md:left-10 z-10 bg-black/50 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/10 text-white text-sm font-semibold tracking-wider uppercase pointer-events-none">
+            Vorher
+          </div>
+          <div className="absolute top-6 right-6 md:top-10 md:right-10 z-10 bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/20 text-white text-sm font-semibold tracking-wider uppercase shadow-lg pointer-events-none">
+            Nachher
           </div>
 
           {/* Slider Handle */}
