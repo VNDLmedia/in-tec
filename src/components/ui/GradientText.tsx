@@ -22,7 +22,7 @@ export default function GradientText({ children }: { children: ReactNode }) {
   return (
     <span
       ref={ref}
-      className="relative inline-block bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+      className="relative inline bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
     >
       {children}
       <span
