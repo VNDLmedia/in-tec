@@ -22,27 +22,39 @@ export default function LeistungenPage() {
     <div className="min-h-screen bg-[#050505] text-zinc-300 selection:bg-white selection:text-black">
       <Navbar />
 
-      <main className="pt-32 md:pt-40 pb-32 px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto">
-          {/* Back link */}
+      {/* Hero – matching detail page style */}
+      <section className="relative h-[60vh] min-h-[350px] md:min-h-[500px] flex items-end overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2500"
+          alt="Unsere Leistungen"
+          fill
+          className="object-cover opacity-40"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pb-16">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-zinc-300 hover:text-white mb-10 transition-colors text-sm font-medium uppercase tracking-widest"
+            className="inline-flex items-center gap-2 text-zinc-300 hover:text-white mb-8 transition-colors text-sm font-medium uppercase tracking-widest"
           >
             <ArrowLeft className="w-4 h-4" /> Startseite
           </Link>
 
-          {/* Header */}
-          <div className="mb-24 max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">
-              Unsere Leistungen
-            </h1>
-            <p className="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed">
-              Von der täglichen Unterhaltsreinigung bis zur spezialisierten
-              Industriereinigung – wir bieten das komplette Spektrum
-              professioneller Gebäudereinigung.
-            </p>
-          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter mb-6">
+            Unsere Leistungen
+          </h1>
+
+          <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed">
+            Von der täglichen Unterhaltsreinigung bis zur spezialisierten
+            Industriereinigung – wir bieten das komplette Spektrum
+            professioneller Gebäudereinigung.
+          </p>
+        </div>
+      </section>
+
+      <main className="pb-32 px-6 lg:px-12 pt-16 md:pt-24">
+        <div className="max-w-7xl mx-auto">
 
           {/* Core Services */}
           <section id="leistungen" className="mb-32">
