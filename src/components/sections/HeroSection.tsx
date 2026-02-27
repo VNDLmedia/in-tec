@@ -4,7 +4,7 @@ import GradientText from "@/components/ui/GradientText";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-end pb-20 md:pb-32 overflow-hidden pt-20">
+    <section className="relative min-h-screen flex flex-col justify-center md:justify-end pb-28 md:pb-32 overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=2500"

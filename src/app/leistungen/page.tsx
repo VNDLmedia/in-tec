@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { coreServices, specializedServices } from "@/data/content";
@@ -22,8 +22,16 @@ export default function LeistungenPage() {
     <div className="min-h-screen bg-[#050505] text-zinc-300 selection:bg-white selection:text-black">
       <Navbar />
 
-      <main className="pt-40 pb-32 px-6 lg:px-12">
+      <main className="pt-32 md:pt-40 pb-32 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
+          {/* Back link */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-zinc-300 hover:text-white mb-10 transition-colors text-sm font-medium uppercase tracking-widest"
+          >
+            <ArrowLeft className="w-4 h-4" /> Startseite
+          </Link>
+
           {/* Header */}
           <div className="mb-24 max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">

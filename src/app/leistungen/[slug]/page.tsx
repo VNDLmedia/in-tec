@@ -103,7 +103,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pb-16">
           <Link
             href="/leistungen"
-            className="inline-flex items-center gap-2 text-zinc-500 hover:text-white mb-8 transition-colors text-sm font-medium uppercase tracking-widest"
+            className="inline-flex items-center gap-2 text-zinc-300 hover:text-white mb-8 transition-colors text-sm font-medium uppercase tracking-widest"
           >
             <ArrowLeft className="w-4 h-4" /> Alle Leistungen
           </Link>
