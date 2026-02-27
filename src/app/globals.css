@@ -24,25 +24,39 @@ body {
   animation: fade-slide-in 0.4s ease-out;
 }
 
+@property --shine-pos {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: -30%;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #34d399, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 @keyframes shine-text {
   0% {
-    background-position: -100% 0;
+    --shine-pos: -30%;
   }
   100% {
-    background-position: 200% 0;
+    --shine-pos: 130%;
   }
 }
 
-.animate-shine-text {
-  background: linear-gradient(
-    105deg,
-    transparent 30%,
-    rgba(255, 255, 255, 0.6) 50%,
-    transparent 70%
-  );
-  background-size: 200% 100%;
+.gradient-text-shine {
+  background:
+    linear-gradient(
+      105deg,
+      transparent calc(var(--shine-pos) - 10%),
+      rgba(255, 255, 255, 0.5) var(--shine-pos),
+      transparent calc(var(--shine-pos) + 10%)
+    ),
+    linear-gradient(to right, #34d399, #22d3ee);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   animation: shine-text 0.8s ease-in-out 0.3s 1 forwards;
-  background-position: -100% 0;
 }

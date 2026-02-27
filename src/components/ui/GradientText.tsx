@@ -22,17 +22,9 @@ export default function GradientText({ children }: { children: ReactNode }) {
   return (
     <span
       ref={ref}
-      className="relative inline bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+      className={`inline ${visible ? "gradient-text-shine" : "gradient-text"}`}
     >
       {children}
-      <span
-        aria-hidden
-        className={`pointer-events-none absolute inset-0 select-none bg-clip-text text-transparent ${
-          visible ? "animate-shine-text" : ""
-        }`}
-      >
-        {children}
-      </span>
     </span>
   );
 }
