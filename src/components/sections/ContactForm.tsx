@@ -146,7 +146,7 @@ export default function ContactForm() {
                       key={item.id}
                       onClick={() => handleServiceSelect(item.title)}
                       className={`group flex items-center gap-4 p-5 md:p-6 bg-[#0a0a0a] hover:bg-white/[0.04] transition-colors text-left ${
-                        idx === formServiceOptions.length - 1 ? "sm:col-span-2" : ""
+                        idx === formServiceOptions.length - 1 ? "sm:col-span-2 sm:justify-center" : ""
                       }`}
                     >
                       <item.icon className="w-5 h-5 text-zinc-600 group-hover:text-white transition-colors shrink-0" />
