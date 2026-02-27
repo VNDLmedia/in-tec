@@ -199,7 +199,11 @@ export default function ContactForm() {
                     <Check className="w-5 h-5" /> Anfrage verbindlich absenden
                   </button>
                   <p className="text-center text-zinc-600 text-sm mt-6 font-light">
-                    Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu.{" "}
+                    Mit dem Absenden stimmen Sie unserer{" "}
+                    <a href="/datenschutz" className="underline hover:text-zinc-400 transition-colors">
+                      Datenschutzerklärung
+                    </a>{" "}
+                    zu.
                     <br />
                     Ihre Daten werden sicher und verschlüsselt übertragen.
                   </p>

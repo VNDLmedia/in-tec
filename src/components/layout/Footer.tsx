@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Sparkles, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -6,12 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
         {/* Brand & Address */}
         <div>
-          <div className="flex items-center gap-2 mb-6">
+          <Link href="/" className="flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-white" />
             <span className="font-semibold tracking-tight text-white text-lg">
               In-Tec Cleaning
             </span>
-          </div>
+          </Link>
           <p className="mb-6 leading-relaxed">
             Premium Facility Management & Gebäudereinigung für höchste
             Ansprüche in Gewerbe und Medizin.
@@ -22,39 +23,63 @@ export default function Footer() {
               10115 Berlin
             </p>
             <p className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-zinc-600" /> +49 (0) 30 123 456 78
+              <Phone className="w-4 h-4 text-zinc-600" />
+              <a
+                href="tel:+493012345678"
+                className="hover:text-white transition-colors"
+              >
+                +49 (0) 30 123 456 78
+              </a>
             </p>
             <p className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-zinc-600" /> kontakt@in-tec.de
+              <Mail className="w-4 h-4 text-zinc-600" />
+              <a
+                href="mailto:kontakt@in-tec.de"
+                className="hover:text-white transition-colors"
+              >
+                kontakt@in-tec.de
+              </a>
             </p>
           </div>
         </div>
 
-        {/* Links: Unternehmen */}
+        {/* Links: Leistungen */}
         <div>
           <h4 className="text-white font-semibold mb-6 uppercase tracking-wider text-xs">
-            Unternehmen
+            Leistungen
           </h4>
           <ul className="space-y-4">
             <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Über uns
-              </a>
+              <Link
+                href="/leistungen/unterhaltsreinigung"
+                className="hover:text-white transition-colors"
+              >
+                Unterhaltsreinigung
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Karriere / Jobs
-              </a>
+              <Link
+                href="/leistungen/bauendreinigung"
+                className="hover:text-white transition-colors"
+              >
+                Bauendreinigung
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Qualitätsmanagement
-              </a>
+              <Link
+                href="/leistungen/glas-und-fassadenreinigung"
+                className="hover:text-white transition-colors"
+              >
+                Glas- & Fassadenreinigung
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Nachhaltigkeit
-              </a>
+              <Link
+                href="/leistungen"
+                className="hover:text-white transition-colors"
+              >
+                Alle Leistungen
+              </Link>
             </li>
           </ul>
         </div>
@@ -66,24 +91,20 @@ export default function Footer() {
           </h4>
           <ul className="space-y-4">
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                href="/impressum"
+                className="hover:text-white transition-colors"
+              >
                 Impressum
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                href="/datenschutz"
+                className="hover:text-white transition-colors"
+              >
                 Datenschutz
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                AGB
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Cookie-Einstellungen
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -109,16 +130,16 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} In-Tec Gebäudemanagement GmbH. Alle
           Rechte vorbehalten.
         </p>
-        <div className="flex gap-4 mt-4 md:mt-0">
-          <a href="#" className="hover:text-white transition-colors">
-            LinkedIn
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
-            XING
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
-            Instagram
-          </a>
+        <div className="flex gap-6 mt-4 md:mt-0">
+          <Link href="/impressum" className="hover:text-white transition-colors">
+            Impressum
+          </Link>
+          <Link
+            href="/datenschutz"
+            className="hover:text-white transition-colors"
+          >
+            Datenschutz
+          </Link>
         </div>
       </div>
     </footer>

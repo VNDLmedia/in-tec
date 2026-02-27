@@ -8,17 +8,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "In-Tec | Premium Gebäudereinigung & Facility Management",
+  metadataBase: new URL("https://in-tec.de"),
+  title: {
+    default: "In-Tec | Premium Gebäudereinigung & Facility Management Berlin",
+    template: "%s | In-Tec Gebäudereinigung",
+  },
   description:
-    "Hochwertiges Facility Management für Immobilien, die mehr verlangen als nur den Standard. Unterhaltsreinigung, Bauendreinigung, Glasreinigung und mehr.",
-  keywords: [
-    "Gebäudereinigung",
-    "Facility Management",
-    "Unterhaltsreinigung",
-    "Bauendreinigung",
-    "Glasreinigung",
-    "Berlin",
-  ],
+    "Professionelle Gebäudereinigung & Facility Management in Berlin. Unterhaltsreinigung, Bauendreinigung, Glasreinigung, Praxisreinigung – über 15 Jahre Erfahrung.",
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: "In-Tec Gebäudemanagement GmbH",
+    title: "In-Tec | Premium Gebäudereinigung & Facility Management Berlin",
+    description:
+      "Professionelle Gebäudereinigung & Facility Management in Berlin. Über 15 Jahre Erfahrung, 250+ betreute Objekte.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "In-Tec | Premium Gebäudereinigung Berlin",
+    description:
+      "Professionelle Gebäudereinigung & Facility Management in Berlin.",
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

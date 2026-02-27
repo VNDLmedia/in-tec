@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { specializedServices } from "@/data/content";
 
 export default function SpecializedServices() {
@@ -11,9 +13,10 @@ export default function SpecializedServices() {
 
         <div className="flex flex-col border-t border-white/10">
           {specializedServices.map((service, idx) => (
-            <div
+            <Link
               key={idx}
-              className="group py-8 md:py-12 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:bg-white/5 transition-colors px-4 -mx-4 rounded-2xl cursor-default"
+              href={`/leistungen/${service.slug}`}
+              className="group py-8 md:py-12 border-b border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:bg-white/5 transition-colors px-4 -mx-4 rounded-2xl"
             >
               <div className="flex items-center gap-6 md:w-1/2">
                 <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-zinc-500 group-hover:text-white group-hover:border-white/30 transition-all">
@@ -23,10 +26,13 @@ export default function SpecializedServices() {
                   {service.title}
                 </h3>
               </div>
-              <p className="text-zinc-400 md:w-1/2 text-lg font-light">
-                {service.desc}
-              </p>
-            </div>
+              <div className="flex items-center gap-4 md:w-1/2">
+                <p className="text-zinc-400 text-lg font-light flex-1">
+                  {service.desc}
+                </p>
+                <ArrowRight className="w-5 h-5 text-zinc-600 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0" />
+              </div>
+            </Link>
           ))}
         </div>
       </div>

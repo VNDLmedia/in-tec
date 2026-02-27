@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Sparkles, Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -23,34 +24,34 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
               <Sparkles className="text-black w-4 h-4" />
             </div>
             <span className="text-white font-semibold tracking-tight text-xl">
               In-Tec
             </span>
-          </div>
+          </Link>
 
           <div className="hidden md:flex items-center gap-10 text-sm font-medium">
-            <a
-              href="#leistungen"
+            <Link
+              href="/leistungen"
               className="text-zinc-400 hover:text-white transition-colors"
             >
-              Portfolio
-            </a>
-            <a
-              href="#spezial"
+              Leistungen
+            </Link>
+            <Link
+              href="/leistungen#spezial"
               className="text-zinc-400 hover:text-white transition-colors"
             >
               Spezial
-            </a>
-            <a
-              href="#kontakt"
+            </Link>
+            <Link
+              href="/#kontakt"
               className="bg-white text-black px-6 py-2.5 rounded-full hover:bg-zinc-200 transition-colors"
             >
               Angebot anfordern
-            </a>
+            </Link>
           </div>
 
           <button
@@ -65,20 +66,34 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-[#050505] pt-24 px-6 flex flex-col gap-6">
-          <a
-            href="#leistungen"
+          <Link
+            href="/leistungen"
             onClick={() => setMobileMenuOpen(false)}
             className="text-3xl font-light text-white border-b border-white/10 pb-4"
           >
-            Portfolio
-          </a>
-          <a
-            href="#kontakt"
+            Leistungen
+          </Link>
+          <Link
+            href="/#kontakt"
             onClick={() => setMobileMenuOpen(false)}
             className="text-3xl font-light text-white border-b border-white/10 pb-4"
           >
             Kontakt
-          </a>
+          </Link>
+          <Link
+            href="/impressum"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-xl font-light text-zinc-400 border-b border-white/10 pb-4"
+          >
+            Impressum
+          </Link>
+          <Link
+            href="/datenschutz"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-xl font-light text-zinc-400 border-b border-white/10 pb-4"
+          >
+            Datenschutz
+          </Link>
         </div>
       )}
     </>

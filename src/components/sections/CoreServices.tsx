@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { coreServices } from "@/data/content";
 
 export default function CoreServices() {
@@ -18,9 +20,10 @@ export default function CoreServices() {
 
         <div className="space-y-12">
           {coreServices.map((service) => (
-            <div
+            <Link
               key={service.id}
-              className="relative h-[80vh] min-h-[600px] w-full rounded-[2rem] overflow-hidden group"
+              href={`/leistungen/${service.slug}`}
+              className="relative h-[80vh] min-h-[600px] w-full rounded-[2rem] overflow-hidden group block"
             >
               {/* Background Image */}
               <Image
@@ -46,7 +49,7 @@ export default function CoreServices() {
                   {service.description}
                 </p>
 
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap items-center gap-3">
                   {service.tags.map((tag, idx) => (
                     <span
                       key={idx}
@@ -55,9 +58,12 @@ export default function CoreServices() {
                       {tag}
                     </span>
                   ))}
+                  <span className="flex items-center gap-2 text-white font-medium ml-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Mehr erfahren <ArrowRight className="w-4 h-4" />
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
