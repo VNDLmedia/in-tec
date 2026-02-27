@@ -4,22 +4,30 @@ import GradientText from "@/components/ui/GradientText";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-[#050505] text-zinc-300 flex flex-col items-center justify-center px-6 selection:bg-white selection:text-black">
-      <p className="text-emerald-400 font-medium tracking-widest uppercase text-sm mb-6">
+    <div className="min-h-screen bg-[#050505] text-zinc-300 flex flex-col items-center justify-center px-6 selection:bg-white selection:text-black relative overflow-hidden">
+      {/* Giant 404 background */}
+      <span
+        aria-hidden
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] md:text-[28rem] lg:text-[36rem] font-black text-white/[0.03] tracking-tighter leading-none select-none pointer-events-none"
+      >
+        404
+      </span>
+
+      <p className="relative text-emerald-400 font-medium tracking-widest uppercase text-sm mb-6">
         Seite nicht gefunden
       </p>
 
-      <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter text-center leading-[0.9] mb-6">
+      <h1 className="relative text-6xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter text-center leading-[0.9] mb-6">
         Hier ist es <br />
         <GradientText>blitzsauber.</GradientText>
       </h1>
 
-      <p className="text-xl md:text-2xl text-zinc-500 font-light text-center max-w-xl mb-16">
+      <p className="relative text-xl md:text-2xl text-zinc-500 font-light text-center max-w-xl mb-16">
         So sauber, dass hier nichts mehr steht. Aber wir können das ändern
         – erzählen Sie uns von Ihrem Projekt.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center gap-4">
+      <div className="relative flex flex-col sm:flex-row items-center gap-4">
         <Link
           href="/#kontakt"
           className="bg-white text-black px-8 py-4 rounded-full text-base font-medium hover:scale-105 transition-transform flex items-center gap-2"
