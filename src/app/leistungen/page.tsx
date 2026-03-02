@@ -7,13 +7,13 @@ import Footer from "@/components/layout/Footer";
 import { coreServices, specializedServices } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Leistungen | In-Tec Gebäudereinigung Berlin",
+  title: "Leistungen | Tadik's Cleaning Berlin",
   description:
-    "Alle Reinigungsleistungen von In-Tec im Überblick: Unterhaltsreinigung, Bauendreinigung, Glasreinigung, Praxisreinigung, Industriereinigung und mehr in Berlin.",
+    "Alle Reinigungsleistungen von Tadik's Cleaning im Überblick: Unterhaltsreinigung, Bauendreinigung, Glasreinigung, Praxisreinigung, Industriereinigung und mehr in Berlin.",
   openGraph: {
-    title: "Leistungen | In-Tec Gebäudereinigung Berlin",
+    title: "Leistungen | Tadik's Cleaning Berlin",
     description:
-      "Alle Reinigungsleistungen von In-Tec im Überblick – professionelle Gebäudereinigung in Berlin.",
+      "Alle Reinigungsleistungen von Tadik's Cleaning im Überblick – professionelle Gebäudereinigung in Berlin.",
   },
 };
 

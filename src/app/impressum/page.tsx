@@ -3,8 +3,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Impressum | In-Tec Gebäudereinigung",
-  description: "Impressum der In-Tec Gebäudemanagement GmbH – Angaben gemäß § 5 TMG.",
+  title: "Impressum | Tadik's Cleaning",
+  description: "Impressum der Tadik's Cleaning GmbH – Angaben gemäß § 5 TMG.",
   robots: { index: false, follow: true },
 };
 
@@ -26,7 +26,7 @@ export default function ImpressumPage() {
                 Angaben gemäß § 5 TMG
               </h2>
               <p>
-                In-Tec Gebäudemanagement GmbH
+                Tadik's Cleaning GmbH
                 <br />
                 Musterstraße 123
                 <br />
@@ -51,8 +51,8 @@ export default function ImpressumPage() {
                 </a>
                 <br />
                 E-Mail:{" "}
-                <a href="mailto:kontakt@in-tec.de" className="text-white hover:text-emerald-400 transition-colors">
-                  kontakt@in-tec.de
+                <a href="mailto:kontakt@tadiks-cleaning.de" className="text-white hover:text-emerald-400 transition-colors">
+                  kontakt@tadiks-cleaning.de
                 </a>
               </p>
             </section>

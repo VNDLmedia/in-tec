@@ -28,7 +28,7 @@ export default function SocialProof() {
         <div className="max-w-4xl mx-auto text-center">
           <Quote className="w-8 h-8 md:w-16 md:h-16 text-zinc-800 mx-auto mb-6 md:mb-8 transform rotate-180" />
           <h3 className="text-xl sm:text-2xl md:text-5xl font-light text-white leading-tight mb-8 md:mb-10">
-            &ldquo;Seit wir mit In-Tec arbeiten, müssen wir uns über die
+            &ldquo;Seit wir mit Tadik&apos;s Cleaning arbeiten, müssen wir uns über die
             Sauberkeit unserer Immobilien <GradientText>keine Gedanken mehr machen</GradientText>. Es läuft
             absolut lautlos, professionell und immer in <GradientText>höchster
             Qualität</GradientText>.&rdquo;

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://in-tec.de/sitemap.xml",
+    sitemap: "https://tadiks-cleaning.de/sitemap.xml",
   };
 }

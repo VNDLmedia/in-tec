@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-white" />
             <span className="font-semibold tracking-tight text-white text-lg">
-              In-Tec Cleaning
+              Tadik's Cleaning
             </span>
           </Link>
           <p className="mb-6 leading-relaxed">
@@ -34,10 +34,10 @@ export default function Footer() {
             <p className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-zinc-600" />
               <a
-                href="mailto:kontakt@in-tec.de"
+                href="mailto:kontakt@tadiks-cleaning.de"
                 className="hover:text-white transition-colors"
               >
-                kontakt@in-tec.de
+                kontakt@tadiks-cleaning.de
               </a>
             </p>
           </div>
@@ -115,7 +115,7 @@ export default function Footer() {
             Gesellschaft
           </h4>
           <ul className="space-y-2 text-zinc-500">
-            <li>In-Tec Gebäudemanagement GmbH</li>
+            <li>Tadik's Cleaning GmbH</li>
             <li>Sitz der Gesellschaft: Berlin</li>
             <li>Registergericht: Amtsgericht Charlottenburg</li>
             <li>HRB: 123456 B</li>
@@ -127,7 +127,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-8">
         <p>
-          &copy; {new Date().getFullYear()} In-Tec Gebäudemanagement GmbH. Alle
+          &copy; {new Date().getFullYear()} Tadik's Cleaning GmbH. Alle
           Rechte vorbehalten.
         </p>
         <div className="flex gap-6 mt-4 md:mt-0">

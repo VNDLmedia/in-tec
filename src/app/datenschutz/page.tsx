@@ -3,9 +3,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung | In-Tec Gebäudereinigung",
+  title: "Datenschutzerklärung | Tadik's Cleaning",
   description:
-    "Datenschutzerklärung der In-Tec Gebäudemanagement GmbH – Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
+    "Datenschutzerklärung der Tadik's Cleaning GmbH – Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
   robots: { index: false, follow: true },
 };
 
@@ -30,7 +30,7 @@ export default function DatenschutzPage() {
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
               </p>
               <p className="mt-4">
-                In-Tec Gebäudemanagement GmbH
+                Tadik's Cleaning GmbH
                 <br />
                 Musterstraße 123
                 <br />
@@ -43,8 +43,8 @@ export default function DatenschutzPage() {
                 </a>
                 <br />
                 E-Mail:{" "}
-                <a href="mailto:kontakt@in-tec.de" className="text-white hover:text-emerald-400 transition-colors">
-                  kontakt@in-tec.de
+                <a href="mailto:kontakt@tadiks-cleaning.de" className="text-white hover:text-emerald-400 transition-colors">
+                  kontakt@tadiks-cleaning.de
                 </a>
               </p>
             </section>

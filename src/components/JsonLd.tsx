@@ -2,13 +2,13 @@ export function LocalBusinessJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://in-tec.de",
-    name: "In-Tec Gebäudemanagement GmbH",
+    "@id": "https://tadiks-cleaning.de",
+    name: "Tadik's Cleaning GmbH",
     description:
       "Professionelle Gebäudereinigung und Facility Management in Berlin. Unterhaltsreinigung, Bauendreinigung, Glasreinigung und Spezialreinigung für Gewerbe und Medizin.",
-    url: "https://in-tec.de",
+    url: "https://tadiks-cleaning.de",
     telephone: "+493012345678",
-    email: "kontakt@in-tec.de",
+    email: "kontakt@tadiks-cleaning.de",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Musterstraße 123",

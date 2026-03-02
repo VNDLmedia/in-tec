@@ -80,7 +80,7 @@ export const coreServices: CoreService[] = [
       "Die Bauendreinigung ist der letzte Schritt vor der Übergabe – und oft der entscheidende Eindruck. Wir sorgen dafür, dass Ihr Bauprojekt makellos übergeben wird.\n\nUnser Service umfasst die komplette Grobreinigung (Entfernung von Bauschutt, Folien, Kleberesten) und die anschließende Feinreinigung aller Oberflächen. Dazu gehören die Beseitigung von Zementschleiern auf Fliesen, die Reinigung aller Fenster und Glasflächen, die Säuberung sanitärer Einrichtungen sowie die Endreinigung von Böden und Treppenräumen.\n\nWir arbeiten termingerecht und koordinieren uns direkt mit Ihrer Bauleitung. Ob Neubau, Sanierung oder Umbau – unsere erfahrenen Teams kennen die Anforderungen und liefern Ergebnisse, die jeder Abnahme standhalten.",
     tags: ["Grobreinigung", "Feinreinigung", "Zementschleier"],
     image:
-      "https://images.unsplash.com/photo-1541888055655-70e281cc1f13?auto=format&fit=crop&q=80&w=2000",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000",
     metaDescription:
       "Professionelle Bauendreinigung in Berlin – Grobreinigung, Feinreinigung, Zementschleier-Entfernung. Termingerecht und abnahmesicher für Neubau & Sanierung.",
   },

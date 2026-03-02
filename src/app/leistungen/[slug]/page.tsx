@@ -32,10 +32,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       : result.service.metaDescription;
 
   return {
-    title: `${title} | In-Tec Gebäudereinigung Berlin`,
+    title: `${title} | Tadik's Cleaning Berlin`,
     description,
     openGraph: {
-      title: `${title} | In-Tec Gebäudereinigung Berlin`,
+      title: `${title} | Tadik's Cleaning Berlin`,
       description,
       type: "website",
     },
@@ -65,7 +65,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     description: description,
     provider: {
       "@type": "LocalBusiness",
-      name: "In-Tec Gebäudemanagement GmbH",
+      name: "Tadik's Cleaning GmbH",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Musterstraße 123",

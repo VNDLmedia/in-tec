@@ -23,7 +23,7 @@ export default function BeforeAfterSlider() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-10 md:mb-16">
           <span className="text-emerald-400 font-medium tracking-widest uppercase mb-4 block text-xs md:text-sm">
-            Der In-Tec Unterschied
+            Der Tadik's Cleaning Unterschied
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             <GradientText>Qualität</GradientText>, die man spürt.

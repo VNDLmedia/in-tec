@@ -30,7 +30,7 @@ export default function Navbar() {
               <Sparkles className="text-black w-4 h-4" />
             </div>
             <span className="text-white font-semibold tracking-tight text-xl">
-              In-Tec
+              Tadik's Cleaning
             </span>
           </Link>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
               <Sparkles className="text-black w-4 h-4" />
             </div>
             <span className="text-white font-semibold tracking-tight text-lg">
-              In-Tec
+              Tadik's
             </span>
           </Link>
 

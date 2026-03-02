@@ -64,11 +64,11 @@ export default function ContactForm() {
             +49 30 123 456 78
           </a>
           <a
-            href="mailto:kontakt@in-tec.de"
+            href="mailto:kontakt@tadiks-cleaning.de"
             className="flex items-center gap-2.5 px-5 py-2.5 border border-white/10 rounded-full text-zinc-400 hover:text-white hover:border-white/20 transition-colors text-sm"
           >
             <Mail className="w-4 h-4" />
-            kontakt@in-tec.de
+            kontakt@tadiks-cleaning.de
           </a>
           <a
             href="https://wa.me/493012345678"

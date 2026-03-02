@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllServiceSlugs } from "@/data/content";
 
-const BASE_URL = "https://in-tec.de";
+const BASE_URL = "https://tadiks-cleaning.de";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const servicePages = getAllServiceSlugs().map((slug) => ({

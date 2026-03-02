@@ -8,24 +8,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://in-tec.de"),
+  metadataBase: new URL("https://tadiks-cleaning.de"),
   title: {
-    default: "In-Tec | Premium Gebäudereinigung & Facility Management Berlin",
-    template: "%s | In-Tec Gebäudereinigung",
+    default: "Tadik's Cleaning | Premium Gebäudereinigung & Facility Management Berlin",
+    template: "%s | Tadik's Cleaning",
   },
   description:
     "Professionelle Gebäudereinigung & Facility Management in Berlin. Unterhaltsreinigung, Bauendreinigung, Glasreinigung, Praxisreinigung – über 15 Jahre Erfahrung.",
   openGraph: {
     type: "website",
     locale: "de_DE",
-    siteName: "In-Tec Gebäudemanagement GmbH",
-    title: "In-Tec | Premium Gebäudereinigung & Facility Management Berlin",
+    siteName: "Tadik's Cleaning GmbH",
+    title: "Tadik's Cleaning | Premium Gebäudereinigung & Facility Management Berlin",
     description:
       "Professionelle Gebäudereinigung & Facility Management in Berlin. Über 15 Jahre Erfahrung, 250+ betreute Objekte.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "In-Tec | Premium Gebäudereinigung Berlin",
+    title: "Tadik's Cleaning | Premium Gebäudereinigung Berlin",
     description:
       "Professionelle Gebäudereinigung & Facility Management in Berlin.",
   },
